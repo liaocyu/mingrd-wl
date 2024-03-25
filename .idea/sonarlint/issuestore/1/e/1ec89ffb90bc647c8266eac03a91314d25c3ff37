@@ -1,0 +1,8 @@
+
+¨
+java:S2229L"`"createTransportTask's" @Transactional requirement is incompatible with the one for this method.(¯½Ó¼üÿÿÿÿ8¼žÑþæ1J$1b4ae242-4310-4893-8712-f833ef472c9a
+~	java:S125E"<This block of commented-out lines of code should be removed.(Òê†¹8ªüÏþæ1J$14aab4d6-c816-441a-b337-88d6ea28e68b
+
+java:S6809L"UCall transactional methods via an injected dependency instead of directly via 'this'.(¯½Ó¼üÿÿÿÿ8ÆžÑþæ1J$7a3308de-a027-4e60-bf2b-af2a309fad11
+z
+java:S1135j"2Complete the task associated to this TODO comment.(ß×ëÌúÿÿÿÿ8ÌžÑþæ1J$ba54677f-6ce2-4640-83a1-b28c0396d232

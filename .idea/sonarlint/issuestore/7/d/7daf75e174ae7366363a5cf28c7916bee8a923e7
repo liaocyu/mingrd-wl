@@ -1,0 +1,15 @@
+
+m
+java:S1104"WMake packagePath a static final constant or non-public and provide accessors if needed.(ç„¢
+g
+java:S1104"QMake title a static final constant or non-public and provide accessors if needed.(Å¬õ
+r
+java:S1104"WMake description a static final constant or non-public and provide accessors if needed.(¹ÿ†ğÿÿÿÿÿ
+r
+java:S1104"WMake contactName a static final constant or non-public and provide accessors if needed.(šŞ‘ˆúÿÿÿÿ
+k
+java:S1104"VMake contactUrl a static final constant or non-public and provide accessors if needed.(¾êş
+s
+java:S1104"XMake contactEmail a static final constant or non-public and provide accessors if needed.(º‡Æ­üÿÿÿÿ
+n
+java:S1104!"SMake version a static final constant or non-public and provide accessors if needed.(ñôışÿÿÿÿ

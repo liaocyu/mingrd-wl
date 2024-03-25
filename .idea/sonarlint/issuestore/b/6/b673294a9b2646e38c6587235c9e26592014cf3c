@@ -1,0 +1,9 @@
+
+†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ÛíÍˆÿÿÿÿÿJ$45c5f350-ce33-4d0c-933c-80a811cbdc60
+†	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(’ö¥ÐþÿÿÿÿJ$ba633db3-723c-4abd-b167-aeaa0189207a
+k	java:S106"+Replace this use of System.out by a logger.(Ö»þºúÿÿÿÿJ$90b56c75-8d1c-41e5-9366-0b54d6502db2
+k	java:S106"+Replace this use of System.out by a logger.(³×“ùýÿÿÿÿJ$451ef70b-83ae-4a05-b684-a44fad5ddd73
+f	java:S106-"+Replace this use of System.out by a logger.(©Ð†¬J$b3009000-6d68-41d4-9d0a-4ed54f4d2036
+k	java:S1064"+Replace this use of System.out by a logger.(®è“˜ûÿÿÿÿJ$96ba56af-9dcf-4a08-ba92-26ebe4a2975b
+w
+java:S1128";Remove this unused import 'cn.hutool.core.util.NumberUtil'.(©Õä¨J$2e58d4e2-2f22-46e8-a759-3411dc087f34
