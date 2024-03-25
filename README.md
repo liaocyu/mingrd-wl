@@ -33,7 +33,7 @@
 
 ![image-20240324192636424](https://halo-1308808626.cos.ap-guangzhou.myqcloud.com/images/202403241926556.png)
 
-![mm](https://halo-1308808626.cos.ap-guangzhou.myqcloud.com/images/202403241930987.gif)
+![mm](./doc/assest/202403241930987.gif)
 
 ## 我的职责
 
