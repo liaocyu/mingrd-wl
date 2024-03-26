@@ -43,7 +43,7 @@
 
 **用户端采用security + jwt 设计双Token（access_token、refresh_token）三验证的方案，实现Token的无感刷新。将Token存入Redis中，实现用户单点登录。**
 
-![image-20240324210934105](https://halo-1308808626.cos.ap-guangzhou.myqcloud.com/images/202403242109206.png)
+![image-20240326170932715](https://halo-1308808626.cos.ap-guangzhou.myqcloud.com/images/202403261709792.png)
 
 
 

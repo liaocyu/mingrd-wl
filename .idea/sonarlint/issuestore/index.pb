@@ -253,3 +253,9 @@ W
 'project-slwl-admin-vue/README/YONGHU.md,4\f\4f9f398a96e5506f8325efdcf8339a5bc256c9da
 ˜
 hsl-express-ms-web/sl-express-ms-web-courier/src/main/java/com/sl/ms/web/courier/service/TaskService.java,f\9\f9764a12fee18d5ddbac8266ff8b554224a2799a
+¡
+qsl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/vo/user/UserLoginRequestVO.java,2\3\238639823968b047ee21e70785331109a41d657a
+ 
+psl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/controller/UserController.java,e\5\e54cceaad2ac395b98e9ebf617225c513557bcd1
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
