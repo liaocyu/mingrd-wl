@@ -259,3 +259,21 @@ qsl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/custom
 psl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/controller/UserController.java,e\5\e54cceaad2ac395b98e9ebf617225c513557bcd1
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+©
+ysl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/carriage/controller/CarriageController.java,1\c\1c2ddd23cb97ce71bb7e668f220b940c70372ab4
+¡
+qsl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/controller/OrderController.java,6\5\65067fd2f464170b3de7b694920d3bca4d76911e
+¡
+qsl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/controller/CargoController.java,b\3\b370e2e60076a4a9954ab603b35939ca2f674917
+ 
+psl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/controller/AreaController.java,7\6\766cdb2d65b68196e13776c27e6112f7aaa219f4
+›
+ksl-express-ms-web/sl-express-ms-web-customer/src/main/java/com/sl/ms/web/customer/vo/oms/MailingSaveVO.java,e\7\e75ca1c668f02c972f18abdee3ce3312a3108b8c
+š
+jsl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service/impl/OrderServiceImpl.java,7\6\76c1222942f983ba2bbd659a69a8969707097e7b
+Ž
+^sl-express-ms-oms/sl-express-ms-oms-domain/src/main/java/com/sl/ms/oms/dto/MailingSaveDTO.java,8\4\84de2c2ce6a13c4adee5e88c561ab3b5bb2391c7
+•
+esl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service/CrudOrderService.java,d\3\d3a26db697543774978cb058eb1818027f1f08df
+ž
+nsl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service/impl/CrudOrderServiceImpl.java,d\a\da82859ffdaaf983341cd730edc41ac3480a20de
