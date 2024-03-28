@@ -277,3 +277,9 @@ jsl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service
 esl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service/CrudOrderService.java,d\3\d3a26db697543774978cb058eb1818027f1f08df
 ž
 nsl-express-ms-oms/sl-express-ms-oms-service/src/main/java/com/sl/ms/oms/service/impl/CrudOrderServiceImpl.java,d\a\da82859ffdaaf983341cd730edc41ac3480a20de
+‘
+asl-express-ms-work/sl-express-ms-work-service/src/test/java/com/sl/ms/work/mq/test/Singleton.java,1\c\1c5c236edc2d0094b36da049ad2b2818e92123c2
+Ž
+^sl-express-ms-work/sl-express-ms-work-service/src/test/java/com/sl/ms/work/mq/test/Number.java,9\4\9400a7f1c252c8db90507191b0f2c58a7aa34ac0
+h
+8sl-express-ms-work/sl-express-ms-work-service/.gitignore,d\d\ddfecfc4ac656b7fce6b679766f256552b6bdc5d
