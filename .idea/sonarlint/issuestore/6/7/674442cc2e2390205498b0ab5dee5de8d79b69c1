@@ -1,9 +1,5 @@
 
-Š
-java:S1854/"BRemove this useless assignment to local variable "courierTaskMsg".(ÎÁèøÿÿÿÿ8‡£ŒÊæ1J$9867a666-a348-4921-9495-1528917ae8f0
-~	java:S125,"<This block of commented-out lines of code should be removed.(ÁÛ£8Œ£ŒÊæ1J$572622d4-8fed-4f48-98b2-417caf16dc4d
-{
-java:S1481/"3Remove this unused "courierTaskMsg" local variable.(ÎÁèøÿÿÿÿ8£ŒÊæ1J$3d89839b-212c-45f0-91d8-95444c93cd56
-z
-java:S11351"2Complete the task associated to this TODO comment.(‘Ìé…şÿÿÿÿ8‘£ŒÊæ1J$c957a65f-27b4-4d45-b699-aaadd59fd9fa
-m	java:S106B"+Replace this use of System.out by a logger.(Ïêç¶8”£ŒÊæ1J$c3c8c505-b84b-4d2d-b9ae-261b2e0128f7
+~	java:S125>"<This block of commented-out lines of code should be removed.(ÁÛ£8¬Éº¥é1J$c2f6880c-65f8-4de6-a55f-31c6dff3970c
+“
+java:S3252j"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(ª™¦ûÿÿÿÿ8°Éº¥é1J$fe2109f5-2d36-4c24-a74a-33212c516593
+m	java:S106|"+Replace this use of System.out by a logger.(Ïêç¶8”£ŒÊæ1J$54162c55-30da-4bb0-adc6-4a72981f5c8a
