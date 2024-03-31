@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sl-express-ms-carriage-api" />
         <module name="sl-express-ms-dispatch-service" />
+        <module name="sl-express-ms-service-scope-service" />
+        <module name="sl-express-ms-service-scope-domain" />
         <module name="sl-express-ms-work-api" />
         <module name="sl-express-ms-carriage-domain" />
         <module name="sl-express-ms-transport-api" />
@@ -27,6 +29,7 @@
         <module name="sl-express-common" />
         <module name="sl-express-ms-web-courier" />
         <module name="sl-express-ms-transport-domain" />
+        <module name="sl-express-ms-service-scope-api" />
         <module name="sl-express-mq" />
         <module name="sl-express-ms-transport-info-domain" />
         <module name="sl-express-ms-oms-service" />

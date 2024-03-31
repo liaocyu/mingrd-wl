@@ -17,6 +17,9 @@
     <mapping directory="$PROJECT_DIR$/sl-express-ms-oms/sl-express-ms-oms-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-oms/sl-express-ms-oms-domain" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-oms/sl-express-ms-oms-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-domain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-domain" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-service" vcs="Git" />

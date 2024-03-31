@@ -309,8 +309,6 @@ n
 msl-express-ms-scope/sl-express-ms-service-scope-domain/src/main/java/com/sl/ms/scope/dto/ServiceScopeDTO.java,9\4\945ffbeb510ffc7c83023d6a98e7629efa229767
 ˜
 hsl-express-ms-scope/sl-express-ms-service-scope-domain/src/main/java/com/sl/ms/scope/dto/Coordinate.java,f\c\fc4e5e1242c87bf2f04f7b4df8ec0720006420c7
-Ÿ
-osl-express-ms-scope/sl-express-ms-service-scope-domain/src/main/java/com/sl/ms/scope/enums/ServiceTypeEnum.java,f\2\f2d837cbc1cf8698d576ea1bedc546766bd65a6d
  
 psl-express-ms-scope/sl-express-ms-service-scope-service/src/main/java/com/sl/ms/scope/enums/ServiceTypeEnum.java,5\9\59b32b1254cd72af23e657a045db0575044cb308
 Ÿ
