@@ -18,8 +18,6 @@
         <module name="sl-express-ms-web-driver" />
         <module name="sl-express-sdn" />
         <module name="sl-express-ms-web-manager (1)" />
-        <module name="sl-express-ms-transport-info-api" />
-        <module name="sl-express-ms-transport-info-service" />
         <module name="sl-express-ms-trade-api" />
         <module name="sl-express-ms-base-domain" />
         <module name="sl-express-xxl-job" />
@@ -31,7 +29,6 @@
         <module name="sl-express-ms-transport-domain" />
         <module name="sl-express-ms-service-scope-api" />
         <module name="sl-express-mq" />
-        <module name="sl-express-ms-transport-info-domain" />
         <module name="sl-express-ms-oms-service" />
         <module name="sl-express-ms-carriage-service" />
         <module name="sl-express-ms-trade-domain" />
@@ -43,6 +40,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="sl-express-ms-transport-info-api" target="11" />
+      <module name="sl-express-ms-transport-info-domain" target="11" />
+      <module name="sl-express-ms-transport-info-service" target="11" />
       <module name="sl-express-ms-web-manager" target="11" />
     </bytecodeTargetLevel>
   </component>

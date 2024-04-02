@@ -53,12 +53,6 @@ k
 ;sl-express-ms-transport/sl-express-ms-transport-api/pom.xml,a\5\a56344898335f204057b5bf2efbdb9143fabb960
 n
 >sl-express-ms-transport/sl-express-ms-transport-domain/pom.xml,4\8\48a40f3d793be794f512b2a82e5be9c5d2e7b006
-p
-@sl-express-ms-transport/sl-express-ms-transport-info-api/pom.xml,a\a\aa279ee22849dbc826338708ac8ef9168892c23f
-s
-Csl-express-ms-transport/sl-express-ms-transport-info-domain/pom.xml,6\7\6742cf79862d59aadee2223782bbb61a56b0d428
-t
-Dsl-express-ms-transport/sl-express-ms-transport-info-service/pom.xml,6\f\6f29eb4d28f918936ecf1580ad3e4f660a4960ca
 o
 ?sl-express-ms-transport/sl-express-ms-transport-service/pom.xml,f\9\f95de448c5d31fe088b0fb5570120d95dd254c29
 _
@@ -364,8 +358,6 @@ wsl-express-ms-carriage/sl-express-ms-carriage-service/src/test/java/com/sl/ms/c
 §
 wsl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/carriage/enums/CarriageExceptionEnum.java,5\5\555c3326ccfdd775c6f94c2ae8f9872dc13f43d5
 “
-csl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/carriage/handler.java,4\2\42d026d9bede9b7d62b2fcbe64e64b12890324ba
-“
 csl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/CarriageApplication.java,c\9\c9680067651c53c5bb48494c99db06fbe872dedd
 ±
 €sl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/carriage/handler/AbstractCarriageChainHandler.java,3\f\3f5d0e7d70572e12454e34449a165e03b30414e4
@@ -383,3 +375,13 @@ xsl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/c
 |sl-express-ms-carriage/sl-express-ms-carriage-service/src/test/java/com/sl/ms/carriage/handler/CarriageChainHandlerTest.java,9\c\9cd77fba9c7ab96f98e4082389d14ee54ad666b7
 Ÿ
 osl-express-ms-carriage/sl-express-ms-carriage-service/src/main/java/com/sl/ms/carriage/utils/CarriageUtils.java,7\b\7bd250ddabe00a726547376dc05fdeaed43ad8f8
+‡
+Wsl-express-ms-oms/sl-express-ms-oms-api/src/main/java/com/sl/ms/oms/api/CargoFeign.java,9\4\948474c1625c8df8d4e86485473cccf27850dcc6
+›
+ksl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/handler/BeforePayHandler.java,9\9\993d54470b1a3ead25ea0a1c0768b7c89f253e0a
+˜
+hsl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/QRCodeService.java,7\c\7c616fb3284d0e1c54028207bc189463fd036d44
+ž
+nsl-express-ms-base/sl-express-ms-base-service/src/main/java/com/sl/ms/base/service/truck/TruckPlanService.java,6\a\6a174ef57d85cbe254586cb64ab4cf40dac33667
+™
+isl-express-ms-scope/sl-express-ms-service-scope-service/src/main/java/com/sl/ServiceScopeApplication.java,8\2\8257709adcc7c7427d5a032ca0e5a7c97eb3beae

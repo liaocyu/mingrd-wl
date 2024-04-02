@@ -1,25 +1,27 @@
 
 k
-java:S3740–"/Provide the parametrized type for this generic.(ì„µxJ$5c84337b-3531-4294-ad78-91759b0a1b0a
+java:S3740–"/Provide the parametrized type for this generic.(ì„µxJ$fd2a91a8-6d5b-467e-bcf4-f44ec6c7565e
 q
-java:S3740±"/Provide the parametrized type for this generic.(³î¢¢ùÿÿÿÿJ$efecf782-95d4-4ba0-b85b-a88064b84986
+java:S3740±"/Provide the parametrized type for this generic.(³î¢¢ùÿÿÿÿJ$46689012-b8fe-4bcf-b291-b6610670129c
 q
-java:S3740±"/Provide the parametrized type for this generic.(³î¢¢ùÿÿÿÿJ$b3df486c-2b2a-481c-853f-d7148b6ca9de
+java:S3740±"/Provide the parametrized type for this generic.(³î¢¢ùÿÿÿÿJ$0055d45d-2edf-4a04-a267-ec1fb8afeaf0
 l
-java:S3740‹"/Provide the parametrized type for this generic.(óÉÔÛJ$6d76a7c8-2d9e-4305-b0f6-954c54514e28
+java:S3740‹"/Provide the parametrized type for this generic.(óÉÔÛJ$249033a1-3c4b-46f5-88cc-5b24323aff70
 q
-java:S3740"/Provide the parametrized type for this generic.(†ÖİĞùÿÿÿÿJ$78b9ed9a-da1a-4e4a-9e11-158b71a77bdd
+java:S3740"/Provide the parametrized type for this generic.(†ÖİĞùÿÿÿÿJ$4f9c9748-1a92-49e7-be52-6bd5413ecedc
 ‹
-java:S1192²"IDefine a constant instead of duplicating this literal "agencyId" 3 times.(ÔÜó¥üÿÿÿÿJ$9434d22c-e208-47e1-9c7d-8d46cadcfa86
+java:S1192²"IDefine a constant instead of duplicating this literal "agencyId" 3 times.(ÔÜó¥üÿÿÿÿJ$0ec04bf7-a99e-413c-bdf3-1b6b4736b320
 †
-java:S1192³"IDefine a constant instead of duplicating this literal "location" 3 times.(÷•›şJ$44537b32-b59b-4532-aaaf-bf445e350b45
+java:S1192³"IDefine a constant instead of duplicating this literal "location" 3 times.(÷•›şJ$ad3f4eb0-c5bd-4f05-b450-6cf3de812f8a
 ~
-java:S6813A"BRemove this field injection and use constructor injection instead.(êæÄŞJ$148da1fa-39b0-49e1-b55e-42fa8f892627
+java:S6813A"BRemove this field injection and use constructor injection instead.(êæÄŞJ$46b449e4-9b8d-4f66-abc8-6ccd37aef280
 ~
-java:S6813D"BRemove this field injection and use constructor injection instead.(êæÄŞJ$13d78b07-c096-44d7-a804-c095e2e018b2
+java:S6813D"BRemove this field injection and use constructor injection instead.(êæÄŞJ$d8231c2c-f9a1-49c5-b04d-4a787c0e68fa
+”
+java:S3252À"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(Ù—Ò¸ıÿÿÿÿ8ô¦˜çé1J$ef5aa404-402d-472d-a2dd-55483bcf5883
 
-java:S3252Û"LUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isEmpty".(µ•ö«øÿÿÿÿJ$6446b56c-1216-44b1-bb3d-db3eb8a8680d
+java:S3252Û"LUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isEmpty".(µ•ö«øÿÿÿÿJ$0c702c43-fcb2-4f22-8304-eaaa178cdede
 ˆ
-java:S3252ª"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(½Ë…³J$fa77643c-9f4e-4f5d-aced-34a4b5e9b392
-x	java:S125•"<This block of commented-out lines of code should be removed.(“ŞœJ$c53aa6d2-9a83-40ab-be6f-c063d99b873e
-x	java:S125­"<This block of commented-out lines of code should be removed.(±Î»¿J$95709048-85fc-489b-b84c-c2138f6efe2b
+java:S3252ª"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(½Ë…³J$ee146dc4-aaf0-4bf1-a7f4-0b3ea4991c4f
+x	java:S125•"<This block of commented-out lines of code should be removed.(“ŞœJ$075590d4-3da4-46ea-84b7-729748bd5a73
+x	java:S125­"<This block of commented-out lines of code should be removed.(±Î»¿J$cdcb280d-6d16-49ac-8939-2751f2c9faac
