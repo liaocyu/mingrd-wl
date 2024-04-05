@@ -1,0 +1,15 @@
+
+D
+java:S5411Ÿ"(Use a primitive boolean expression here.(‡šÑ©ûÿÿÿÿ
+`
+java:S3252K"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(ã©òI
+f
+java:S3252V"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".( ‚“úÿÿÿÿ
+2
+java:S3626€"Remove this redundant jump.(ûÁİ…
+u
+java:S2142‚"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
+`
+java:S3252"IUse static access with "cn.hutool.core.text.CharSequenceUtil" for "join".(şøÎ£
+b
+java:S3252”"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(¢Ô¿÷

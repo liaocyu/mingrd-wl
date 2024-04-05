@@ -40,6 +40,9 @@
         <option value="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-service/pom.xml" />
         <option value="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-api/pom.xml" />
         <option value="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-api/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-service/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

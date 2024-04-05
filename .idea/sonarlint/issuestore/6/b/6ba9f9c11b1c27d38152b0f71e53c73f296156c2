@@ -1,0 +1,8 @@
+
+[	java:S112Q"FDefine and throw a dedicated exception instead of using a generic one.(§£Š
+O
+java:S4719T"9Replace charset name argument with StandardCharsets.UTF_8(¶å°ü
+T
+java:S4719]"9Replace charset name argument with StandardCharsets.UTF_8(áŠİ‰øÿÿÿÿ
+a
+java:S3252m"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(Ö˜’é
