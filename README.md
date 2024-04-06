@@ -152,6 +152,44 @@ public class SameCityChainHandler extends AbstractCarriageChainHandler {
     }
 }
 
+@Component
+public class CarriageChainHandler {
+
+    /**
+     * 利用Spring注入特性，按照 @Order 从小到达排序注入到集合中
+     */
+    @Resource
+    private List<AbstractCarriageChainHandler> chainHandlers;
+
+    private AbstractCarriageChainHandler firstHandler;
+
+    /**
+     * 组装处理链
+     */
+    @PostConstruct
+    private void constructChain() {
+        if (CollUtil.isEmpty(chainHandlers)) {
+            throw new SLException("not found carriage chain handler!");
+        }
+        //处理链中第一个节点
+        firstHandler = chainHandlers.get(0);
+        for (int i = 0; i < chainHandlers.size(); i++) {
+            if (i == chainHandlers.size() - 1) {
+                //最后一个处理链节点
+                chainHandlers.get(i).setNextHandler(null);
+            } else {
+                //设置下游节点
+                chainHandlers.get(i).setNextHandler(chainHandlers.get(i + 1));
+            }
+        }
+    }
+
+    public CarriageEntity findCarriage(WaybillDTO waybillDTO) {
+        //从第一个节点开始处理
+        return firstHandler.doHandler(waybillDTO);
+    }
+
+}
 ```
 
 怎样判断 寄件城市是否是经济区互寄？
@@ -271,7 +309,11 @@ public class SameCityChainHandler extends AbstractCarriageChainHandler {
 
 **使用 RabbitMQ 延时队列 完成订单转运单逻辑操作；调度中心模块使用 Redis List、Set 数据结构处理运单分发;**
 
+==运单状态：== 新建、装车、运输中、到达终端网点、拒收
+
 ![image-20240329105445815](https://halo-1308808626.cos.ap-guangzhou.myqcloud.com/images/202403291054028.png)
+
+![image-20240406115209445](./assets/image-20240406115209445.png)
 
 说说你的订单转运单的流程吧
 
@@ -279,32 +321,175 @@ public class SameCityChainHandler extends AbstractCarriageChainHandler {
 快递员上门取件后，由快递员 微服务处理收件请求。取件完毕后，最后向 MQ 发送了取件成功的消息。在另一端，work 微服务中会监听该消息，执行订单转运单流程
 
 在 work 微服务中，会消费这条消息。
-1、首先会对这条消息进行幂等性的判断，根据订单ID 查询是否存在 相应的运单信息
-2、然后判断 订单以及货物参数（重量体积）是否异常；
+1、首先会对这条消息进行幂等性的判断，根据订单ID 查询是否存在 相应的运单信息；存在抛出异常
+2、然后判断 订单以及货物参数（重量体积）、货物位置信息是否异常；
 3、根据传进来的订单实体信息，得到寄收件人的营业网点是否相同，判断其是否参与调度。
 	3.1 如果参与调度，就需要通过 feign 接口调用路线规划服务，传入 寄收件人 ID ，查询路线规划
-4 然后封装运单信息，把一些重要参数，如 运单ID、订单ID、调度状态、运单状态，起始，终端营业网点等信息封装好
-5、封装好了之后，将运单信息保存到数据库中，
+4 然后封装好运单信息，把一些重要参数，如 运单ID、订单ID、调度状态、运单状态，起始，终端营业网点等信息封装好
+5、封装好了之后，将运单保存到数据库中，
 6、根据运单是否参与调度状态做如下：
-	不需要参与调度：1、想订单微服务发消息，更改订单的状态为已到达终端网点
-				 2、像订单延迟队列发送消息，由调度微服务去消费，生成取派件任务
-	需要调度，就像运单延迟队列中发送消息，由调度微服务将该运单继续向下一个站点进行调度。		
-    
-最后向运单延迟队列中发送一条消息，消息内容就是运单ID和订单ID。通知给其他系统，运单已经完成
+	不需要参与调度：1、向订单微服务发送延迟消息，更改订单的状态为已到达终端网点
+				 2、向调度中心发送延迟消息，生成取派件任务
+	需要调度，向调度中心发送一条延迟消息等待调度，处理订单完成合并运单操作
+	
+	最后，无论是否需要调度，都需要向运单延迟队列发送一条消息，消息的内容就是运单 ID 和 订单ID 。通知其他系统。运单已经生成
 ```
 
 运单合并流程
-
->每一个运单在运输过程中，都有自己得运输路线，他们得起点和终点是不一样的；但是在运输过程中部分环节是一样的，因此，我们将
 
 ```
 运单合并流程中，就是将每一个机构等待调度的快件，进行分组。将当前机构的快件按照去往相同下一站的条件、进行分组。
 每当有新的调度的运单消息过来，然后我们从运单中获取到当前运单的下一站去哪里，然后利用 redis list数据结构将这笔订单存储在 list 数据结构中。 将来的话，也是从对应的 Redis list集合中获取对应的负责的运输的运单列表即可
 
-另外，运单是通过消息发过来的，需要进行幂等性的校验，这里借助了 Redis 的set 集合，每当有新的运单过来，我只需要从Set集合中查询一下，这个运单ID是否在Set集合中已经存在，如果已经存在，那就说明这是重复消费的，我就直接拒绝了。
-
+1、取出订单信息里面的起始网点和终点网点；
+2、进行幂等性的判断；使用 isMember 判断是否在这个set集合中，在直接返回
+3、然后分别存储到 redis 的 list 集合【leftpush】和 set 集合中
 
 ```
+
+![image-20240406163656818](assets/image-20240406163656818.png)
+
+运单状态修改时的一个流程？
+
+>司机微服务出库流程：司机运输流程中，当司机出入库以后，需要修改运单状态为运输中，开始运输任务；
+>
+>快递员 web 微服务快递拒收流程：快递员派件时，快递被用户拒收了，需要修改运单状态为拒收
+
+```txt
+订单状态改变由 work运单微服务负责，流程如下：
+1、进行参数校验，判断 运单id 列表是否为空，修改的状态是否为新建状态，否则抛出异常
+2、修改订单状态为 拒收的情况下：
+	2.1、遍历每一个运单对象，将起始网点和终点网点进行互换
+	2.2、如果不参与调度【起始网点和终点网点相同】
+		2.2.1、修改运单状态为已到达状态，发送延迟消息给调度中心生成取件任务
+	2.3、参与调度，查询回去的路线规划，修改运单为待调度，并删除当前节点后拼接返回的路线规划
+	2.4、发送延迟消息给 调度中心进行一个运单的合并
+3、如果不为拒收的情况：
+	3.1、遍历这些运单对象列表，获取即将发往的目的地机构，构建消息实体类
+	3.2、发送运单物流消息，保存在 MongoDB中；设置运单状态
+4、进行一个数据库的批量更新
+5、发送消息给订单微服务，更改订单状态；
+	
+```
+
+
+
+```java
+ /**
+     * 修改运单状态
+     *
+     * @param ids                  运单id列表
+     * @param transportOrderStatus 修改的状态
+     * @return
+     */
+    @Override
+    public boolean updateStatus(List<String> ids, TransportOrderStatus transportOrderStatus) {
+        if (CollUtil.isEmpty(ids)) {
+            return false;
+        }
+
+        if (TransportOrderStatus.CREATED == transportOrderStatus) {
+            //修改订单状态不能为 新建 状态
+            throw new SLException(WorkExceptionEnum.TRANSPORT_ORDER_STATUS_NOT_CREATED);
+        }
+
+        List<TransportOrderEntity> transportOrderList;
+        //判断是否为拒收状态，如果是拒收需要重新查询路线，将包裹逆向回去
+        if (TransportOrderStatus.REJECTED == transportOrderStatus) {
+            //查询运单列表
+            transportOrderList = super.listByIds(ids);
+            for (TransportOrderEntity transportOrderEntity : transportOrderList) {
+                //设置为拒收运单
+                transportOrderEntity.setIsRejection(true);
+                //根据起始机构规划运输路线，这里要将起点和终点互换
+                Long sendAgentId = transportOrderEntity.getEndAgencyId();//起始网点id
+                Long receiveAgentId = transportOrderEntity.getStartAgencyId();//终点网点id
+
+                //默认参与调度
+                boolean isDispatch = true;
+                if (ObjectUtil.equal(sendAgentId, receiveAgentId)) {
+                    //相同节点，无需调度，直接生成派件任务
+                    isDispatch = false;
+                } else {
+                    TransportLineNodeDTO transportLineNodeDTO = this.transportLineFeign.queryPathByDispatchMethod(sendAgentId, receiveAgentId);
+                    if (ObjectUtil.hasEmpty(transportLineNodeDTO, transportLineNodeDTO.getNodeList())) {
+                        throw new SLException(WorkExceptionEnum.TRANSPORT_LINE_NOT_FOUND);
+                    }
+
+                    //删除掉第一个机构，逆向回去的第一个节点就是当前所在节点
+                    transportLineNodeDTO.getNodeList().remove(0);
+                    transportOrderEntity.setSchedulingStatus(TransportOrderSchedulingStatus.TO_BE_SCHEDULED);//调度状态：待调度
+                    transportOrderEntity.setCurrentAgencyId(sendAgentId);//当前所在机构id
+                    transportOrderEntity.setNextAgencyId(transportLineNodeDTO.getNodeList().get(0).getId());//下一个机构id
+
+                    //获取到原有节点信息
+                    TransportLineNodeDTO transportLineNode = JSONUtil.toBean(transportOrderEntity.getTransportLine(), TransportLineNodeDTO.class);
+                    //将逆向节点追加到节点列表中
+                    transportLineNode.getNodeList().addAll(transportLineNodeDTO.getNodeList());
+                    //合并成本
+                    transportLineNode.setCost(NumberUtil.add(transportLineNode.getCost(), transportLineNodeDTO.getCost()));
+                    transportOrderEntity.setTransportLine(JSONUtil.toJsonStr(transportLineNode));//完整的运输路线
+                }
+                transportOrderEntity.setStatus(TransportOrderStatus.REJECTED);
+
+                if (isDispatch) {
+                    //发送消息参与调度
+                    this.sendTransportOrderMsgToDispatch(transportOrderEntity);
+                } else {
+                    //不需要调度，发送消息生成派件任务
+                    transportOrderEntity.setStatus(TransportOrderStatus.ARRIVED_END);
+                    this.sendDispatchTaskMsgToDispatch(transportOrderEntity);
+                }
+            }
+        } else {
+            //根据id列表封装成运单对象列表
+            transportOrderList = ids.stream().map(id -> {
+                //获取将发往的目的地机构
+                Long nextAgencyId = this.getById(id).getNextAgencyId();
+                OrganDTO organDTO = organFeign.queryById(nextAgencyId);
+
+                //构建消息实体类
+                String info = CharSequenceUtil.format("快件发往【{}】", organDTO.getName());
+                String transportInfoMsg = TransportInfoMsg.builder()
+                        .transportOrderId(id)//运单id
+                        .status("运送中")//消息状态
+                        .info(info)//消息详情
+                        .created(DateUtil.current())//创建时间
+                        .build().toJson();
+                //发送运单跟踪消息
+                this.mqFeign.sendMsg(Constants.MQ.Exchanges.TRANSPORT_INFO, Constants.MQ.RoutingKeys.TRANSPORT_INFO_APPEND, transportInfoMsg);
+
+                //封装运单对象
+                TransportOrderEntity transportOrderEntity = new TransportOrderEntity();
+                transportOrderEntity.setId(id);
+                transportOrderEntity.setStatus(transportOrderStatus);
+                return transportOrderEntity;
+            }).collect(Collectors.toList());
+        }
+
+        //批量更新数据
+        boolean result = super.updateBatchById(transportOrderList);
+
+        //发消息通知其他系统运单状态的变化
+        this.sendUpdateStatusMsg(ids, transportOrderStatus);
+
+        return result;
+    }
+
+    private void sendUpdateStatusMsg(List<String> ids, TransportOrderStatus transportOrderStatus) {
+        String msg = TransportOrderStatusMsg.builder()
+                .idList(ids)
+                .statusName(transportOrderStatus.name())
+                .statusCode(transportOrderStatus.getCode())
+                .build().toJson();
+
+        //将状态名称写入到路由key中，方便消费方选择性的接收消息
+        String routingKey = Constants.MQ.RoutingKeys.TRANSPORT_ORDER_UPDATE_STATUS_PREFIX + transportOrderStatus.name();
+        this.mqFeign.sendMsg(Constants.MQ.Exchanges.TRANSPORT_ORDER_DELAYED, routingKey, msg, Constants.MQ.LOW_DELAY);
+    }
+```
+
+
 
 ### 5、运输任务生成流程
 
@@ -315,6 +500,24 @@ public class SameCityChainHandler extends AbstractCarriageChainHandler {
 因为等待分配任务的车次可能有两三百个，但是如果我们把这两三百个分配车次任务的计算压力都给到一个调度微服务，那肯定是不合理的。我们在部署微服务的时候，调度微服务部署了多个实例，组成一个集群，我应该将计算压力平均分配到集群里面的每一个节点；
 使用 xxl-job的分片广播，传入 xxl-job的分片数量和当前任务的下表，利用sql语法的mod 函数，用车次 ID对分片总数量取余，得到一部分的车次信息，返回给当前调度微服务，从而实现将多个车次任务分配给多个调度微服务去处理，这就是负载均衡的意思。
 ```
+
+在我的项目中，是由 调度微服务负责整体的 调度流程，触发运输流程自然也是由调度微服务负责。在调度微服务，使用 XXL-JOB 实现了分布式任务调度功能，每间隔一段事件，就执行一次定时任务，定时任务的内容就是生成运输任务
+
+整体流程：
+
+等待分配任务的车次，可能有两三百个，但是如果把这两三百个分配车次任务的计算压力都给到一个调度微服务，那肯定不合理的，因此在部署微服务的时候，调度微服务部署了多个实例，使用 xxl-job 分片广播集群，将计算压力平均分配到集群里面的每一个实例。
+
+```txt
+1、通过 xxl-job 定义了定时任务。采用分片策略进行广播，为了使多个微服务实例并行处理车辆安排
+2、调用基础微服务，查询未来两个小时内等待发车的车次信息，传入 xxl-job 的分片节点数量还有当前节点索引。
+	在使用 Mp查询的时候，利用了 sql 中的 mod 函数，用车次 id 对分片总数量取余，得到一部分的车次信息，然后再返回给当前调度微服务。
+3、更改车次计划状态为已分配；
+4、为了 避免 并发问题，加上分布式锁，锁住 key（发车机构id和 结束机构id），按照加锁的顺序，业务顺序在前的肯定是有限执行的。
+5、然后对车次分别进行 装载，从 redis list 集合取出运单分配到车次上，并进行递归处理操作，直到运单体积、重量超过车次最大承载量；并将最后一个运单 Rpush 进 redis list 队列；然后删除掉对应 redis list和set里面的数据
+6、最后发送消息到mq 通知其他微服务生成 运输任务和 司机作业单；
+```
+
+
 
 ### 6、物流追踪模块
 

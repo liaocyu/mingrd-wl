@@ -1,13 +1,13 @@
 
-c
-java:S1192ı"GDefine a constant instead of duplicating this literal "CREATE" 4 times.(Ú©øÿÿÿÿ
-Y
-java:S1214"CMove constants defined in this interfaces to another class or enum.(Á‚¼²
-Y
-java:S1214"CMove constants defined in this interfaces to another class or enum.(É­ˆ“
-^
-java:S1214?"CMove constants defined in this interfaces to another class or enum.(À¯Õ†øÿÿÿÿ
-Y
-java:S1214”"CMove constants defined in this interfaces to another class or enum.(è‚®P
-_
-java:S1214ô"CMove constants defined in this interfaces to another class or enum.(‰£…ˆÿÿÿÿÿ
+‰
+java:S1192ı"GDefine a constant instead of duplicating this literal "CREATE" 4 times.(Ú©øÿÿÿÿJ$4adf8e98-0a96-4ad0-963c-505806b22f2a
+
+java:S1214"CMove constants defined in this interfaces to another class or enum.(Á‚¼²J$87fd9176-3166-4f7c-83aa-a4576810635c
+
+java:S1214"CMove constants defined in this interfaces to another class or enum.(É­ˆ“J$20054462-baf1-41d0-9ca5-86a30604fa38
+„
+java:S1214?"CMove constants defined in this interfaces to another class or enum.(À¯Õ†øÿÿÿÿJ$9366f6b0-5a27-46c4-97fe-fe70b3bc8d06
+
+java:S1214”"CMove constants defined in this interfaces to another class or enum.(è‚®PJ$0f658a32-1ba2-44c2-94db-9958a6a7b093
+…
+java:S1214ô"CMove constants defined in this interfaces to another class or enum.(‰£…ˆÿÿÿÿÿJ$14b2cdff-219e-47ab-93b6-59bebbb2d685

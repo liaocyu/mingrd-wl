@@ -473,3 +473,15 @@ Nsl-express-demo/sl-express-xxl-job/src/main/java/com/sl/XxlJobApplication.java
 Wsl-express-demo/sl-express-xxl-job/src/main/java/com/sl/xxljob/config/XxlJobConfig.java,3\3\33d355821babbbdd751300e4777358db9c1d73b0
 †
 psl-express-ms-search/sl-express-ms-search-service/src/main/java/com/sl/ms/search/service/CourierTaskService.java,3\3\33ce4e3a6bb32de6f8791b00bb6847dee90a76c7
+ù
+msl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/CourierTaskCountDTO.java,3\d\3dcf404f69ed948645dcc89dc6d53973b78282e7
+ü
+osl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/PickupDispatchTaskDTO.java,3\3\33099507c17a5691478100178f598a2182bf9bca
+†
+psl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/TaskTransportUpdateDTO.java,1\4\14538cb66b54db5f66a41e18e2a3cdc8700df387
+õ
+ksl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/TransportOrderDTO.java,d\2\d27dc852991d4e6a6abd29826219a56403081fda
+ö
+jsl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/TransportTaskDTO.java,8\8\8816c23b69944edbea5873e9f22a652cfc91e5cb
+©
+ysl-express-ms-transport/sl-express-ms-transport-api/src/main/java/com/sl/ms/transport/api/DispatchConfigurationFeign.java,3\8\38626424bc7fbfff00cc02b6fe9ab0c1bfb36ec7
