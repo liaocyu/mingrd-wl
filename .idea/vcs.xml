@@ -20,6 +20,15 @@
     <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-domain" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-scope/sl-express-ms-service-scope-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-domain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-domain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-domain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-domain" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/sl-express-ms-trade/sl-express-ms-trade-service" vcs="Git" />

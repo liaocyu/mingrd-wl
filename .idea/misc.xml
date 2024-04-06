@@ -43,6 +43,15 @@
         <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-api/pom.xml" />
         <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-domain/pom.xml" />
         <option value="$PROJECT_DIR$/sl-express-ms-transport-info/sl-express-ms-transport-info-service/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-api/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-search/sl-express-ms-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-service/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-track/sl-express-ms-track-api/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-api/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/sl-express-ms-sms/sl-express-ms-sms-service/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

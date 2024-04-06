@@ -471,3 +471,5 @@ qsl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/s
 Nsl-express-demo/sl-express-xxl-job/src/main/java/com/sl/XxlJobApplication.java,b\7\b75ebf1b5ac9fd0c782c97d0ea9f41ce4756846f
 ‡
 Wsl-express-demo/sl-express-xxl-job/src/main/java/com/sl/xxljob/config/XxlJobConfig.java,3\3\33d355821babbbdd751300e4777358db9c1d73b0
+ 
+psl-express-ms-search/sl-express-ms-search-service/src/main/java/com/sl/ms/search/service/CourierTaskService.java,3\3\33ce4e3a6bb32de6f8791b00bb6847dee90a76c7
