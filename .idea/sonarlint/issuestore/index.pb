@@ -485,3 +485,7 @@ ksl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domai
 jsl-express-ms-work/sl-express-ms-work-domain/src/main/java/com/sl/ms/work/domain/dto/TransportTaskDTO.java,8\8\8816c23b69944edbea5873e9f22a652cfc91e5cb
 ©
 ysl-express-ms-transport/sl-express-ms-transport-api/src/main/java/com/sl/ms/transport/api/DispatchConfigurationFeign.java,3\8\38626424bc7fbfff00cc02b6fe9ab0c1bfb36ec7
+Š
+Zsl-express-ms-track/sl-express-ms-track-service/src/main/java/com/sl/TrackApplication.java,c\4\c41e744fa4bcd4c8b09e5d45e69ce9527b562d78
+R
+"project-slwl-admin-vue/src/App.vue,2\9\29907f1ab990243a2c33357052e63a113477dce3
