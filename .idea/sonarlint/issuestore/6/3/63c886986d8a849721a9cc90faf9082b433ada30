@@ -1,13 +1,13 @@
 
-‡
-java:S3252"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¼Æ«áJ$e1fb6794-0e50-4a05-a5d9-00ba7c9ab362
-‡
-java:S3252#"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¼Æ«áJ$bee8e2ee-18dc-43c5-9e40-b1e08e2bfaad
+
+java:S3252"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¼Æ«á8×‚Í®ì1J$abadedfc-6c11-453c-8acd-9bb389693201
+
+java:S3252#"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¼Æ«á8Ú‚Í®ì1J$5c88cece-4129-47ab-970b-1f23928259b1
+–
+java:S3252+"NUse static access with "cn.hutool.core.text.CharSequenceUtil" for "removeAll".(²åîÎşÿÿÿÿ8Ü‚Í®ì1J$e019b806-ccc6-40eb-8304-01234b150129
 
-java:S3252+"NUse static access with "cn.hutool.core.text.CharSequenceUtil" for "removeAll".(²åîÎşÿÿÿÿJ$0ebff5e1-e5f0-48c2-9669-295d66ad9c6a
-ˆ
-java:S3252,"LUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isEmpty".(è“•ÎJ$204a194c-7dfc-427b-a289-8c7be0d988de
-Œ
-java:S3252."KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¹úåúÿÿÿÿJ$39383088-ecfd-4165-bf7e-199bd0a1b01e
-{
-java:S62135":Rename this variable to not match a restricted identifier.(Ë™ŞğúÿÿÿÿJ$9e8f8930-f383-4bc4-9485-0d1ecfdf5e51
+java:S3252,"LUse static access with "cn.hutool.core.text.CharSequenceUtil" for "isEmpty".(è“•Î8İ‚Í®ì1J$b56a2147-b183-4f21-87d9-17e45168096f
+“
+java:S3252."KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(¹úåúÿÿÿÿ8Ş‚Í®ì1J$56836f73-2236-4146-b4e9-558d75055d29
+‚
+java:S62135":Rename this variable to not match a restricted identifier.(Ë™Şğúÿÿÿÿ8á‚Í®ì1J$87c9fe2a-1079-4a76-8486-49bd6e258685
