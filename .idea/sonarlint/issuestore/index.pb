@@ -517,3 +517,21 @@ o
 ?sl-express-mq/src/main/java/com/sl/mq/config/MessageConfig.java,1\0\102c0dbc818842de6426e0f42d9d96f3e49f3f6c
 t
 Dsl-express-mq/src/main/java/com/sl/mq/config/ErrorMessageConfig.java,5\5\5539ac7caf867a61aa48764822007ba6974d4878
+›
+ksl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/NativePayService.java,b\c\bc3666b6a3ad628006de335dd81ae3e7bb7165c7
+?
+è‡ªæˆ‘ä»‹ç».md,1\a\1a0bf07caec6a08b24dfd15e86b15efa600517ed
+?
+Redis é›†ç¾¤.md,c\a\ca961d3b92d5008d6fe12b3c9da724ebec1737f3
+£
+ssl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/impl/JsapiPayServiceImpl.java,9\5\951ff4ccfa1b4ed65b7bb5e97d9bc6170dc246e4
+™
+isl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/TradingService.java,f\4\f45b09baa3534cb165b48970fff950fb5a4dc2fe
+
+nsl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/RefundRecordService.java,6\9\693ff614f9da1550c24c70a42fe69ffb5f42ba66
+˜
+hsl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/NotifyService.java,d\6\d6610528ab8db9862f7ed6ec40b782f6bffc5524
+š
+jsl-express-ms-trade/sl-express-ms-trade-service/src/main/java/com/sl/ms/trade/service/BasicPayService.java,e\1\e165bf2a08fc0506ab204422ac1a3be6701511ad
+Œ
+\sl-express-ms-trade/sl-express-ms-trade-service/src/test/java/com/sl/ms/trade/test/Main.java,7\a\7aa38e6270f955724f730f2b832651b6d8d0bbbf

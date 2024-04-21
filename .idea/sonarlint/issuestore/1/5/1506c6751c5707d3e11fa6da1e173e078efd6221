@@ -1,15 +1,15 @@
 
-D
-java:S5411Ÿ"(Use a primitive boolean expression here.(‡šÑ©ûÿÿÿÿ
-`
-java:S3252K"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(ã©òI
-f
-java:S3252V"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".( ‚“úÿÿÿÿ
-2
-java:S3626€"Remove this redundant jump.(ûÁİ…
-u
-java:S2142‚"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
-`
-java:S3252"IUse static access with "cn.hutool.core.text.CharSequenceUtil" for "join".(şøÎ£
-b
-java:S3252”"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(¢Ô¿÷
+j
+java:S5411Ÿ"(Use a primitive boolean expression here.(‡šÑ©ûÿÿÿÿJ$eb284f5a-589a-4a9a-9971-bdb7754e2fb6
+†
+java:S3252K"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(ã©òIJ$168b7f27-1f3f-4ec4-a926-3aa5622b9426
+Œ
+java:S3252V"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".( ‚“úÿÿÿÿJ$d369ae30-27e1-4da8-8e5d-ed7efe84555d
+X
+java:S3626€"Remove this redundant jump.(ûÁİ…J$5e264446-74e7-4c2c-a04d-6d683c6f7c19
+›
+java:S2142‚"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾J$c2d1987e-337c-4786-9881-2f5f7768df18
+†
+java:S3252"IUse static access with "cn.hutool.core.text.CharSequenceUtil" for "join".(şøÎ£J$2bf43cc9-b973-4cba-8cfd-56cde811f8cb
+ˆ
+java:S3252”"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(¢Ô¿÷J$a0e94b46-1085-4a56-9395-9dd170e9909a

@@ -1,19 +1,19 @@
 
 ‰
-java:S3252+"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8ÔäìŒê1J$867826bb-057e-4018-a262-4b1eec645510
+java:S3252+"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8ÔäìŒê1J$d1ad4b79-4228-41cb-b062-bff47fa15247
 ˆ
-java:S32525"EUse static access with "cn.hutool.core.util.ObjectUtil" for "equals".(âßùÃ8×äìŒê1J$fad51cb0-ffc5-4159-9a91-5ba0f40a9fe6
+java:S32525"EUse static access with "cn.hutool.core.util.ObjectUtil" for "equals".(âßùÃ8×äìŒê1J$3e8c1541-1d6c-45ab-ba3f-544ea75d3909
 Œ
-java:S32528"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(¡·­©ùÿÿÿÿJ$a5d848e7-8139-4107-af69-9e107a19d991
+java:S32527"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "equals".(¡·­©ùÿÿÿÿJ$cbde8f0c-b0f7-4d1d-91eb-776332682fa1
 ”
-java:S3252M"LUse static access with "cn.hutool.core.util.ObjectUtil" for "isAllNotEmpty".(²Ê²Ïÿÿÿÿÿ8ÛäìŒê1J$2302a325-c636-4f90-9ecc-8fd807fe2a13
+java:S3252M"LUse static access with "cn.hutool.core.util.ObjectUtil" for "isAllNotEmpty".(²Ê²Ïÿÿÿÿÿ8ÛäìŒê1J$c7e915b8-5237-4994-a165-265031b360c9
 ‰
-java:S3252^"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8ßäìŒê1J$dd5ffcc3-2247-49b1-831b-cb8ae8eea507
+java:S3252^"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8ßäìŒê1J$5a4b75f5-7714-4d19-bf40-18044e932eed
 ‡
-java:S3252|"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(½°ÔñJ$4afae06f-32b5-4afc-8918-6373fb36c0a8
+java:S3252|"KUse static access with "cn.hutool.core.text.CharSequenceUtil" for "format".(½°ÔñJ$b3f69c03-23d3-4b38-adc0-5f78db7c897b
 Š
-java:S3252„"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8çäìŒê1J$298c75d6-3451-4f68-b721-4f2e79cc9bf4
+java:S3252„"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(¦¯’û8çäìŒê1J$c6773d09-2c24-4f26-b99e-8ffc73cf0d68
 Š
-java:S3252”"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(È‘ß8êäìŒê1J$909d2d54-b84f-4ec1-8545-ede8debcf64d
+java:S3252”"FUse static access with "cn.hutool.core.util.ObjectUtil" for "isEmpty".(È‘ß8êäìŒê1J$273d4e70-7bb4-4e31-a3b1-7ced32dd3ae3
 ‰
-java:S3252˜"EUse static access with "cn.hutool.core.util.ObjectUtil" for "equals".(ıãÍ8ëäìŒê1J$43343c12-7012-4cde-bf8b-053629b3d6e5
+java:S3252˜"EUse static access with "cn.hutool.core.util.ObjectUtil" for "equals".(ıãÍ8ëäìŒê1J$c1c4489f-4d8e-41c2-b032-0407d017f382
